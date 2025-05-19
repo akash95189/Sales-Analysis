@@ -3,7 +3,7 @@
 
 ## Project Overview
 
-This project is an end-to-end data analysis solution designed to extract critical business insights from Walmart sales data. We utilize Python for data processing and analysis, SQL for advanced querying, and structured problem-solving techniques to solve key business questions.
+This project is an end-to-end data analysis solution designed to extract critical business insights from Sales data of Electronic outlet. We utilize Python for data processing and analysis, SQL for advanced querying, and structured problem-solving techniques to solve key business questions.
 
 ---
 ## Project Steps
@@ -27,26 +27,17 @@ This project is an end-to-end data analysis solution designed to extract critica
   - **Fix Data Types**- Ensure all columns have consistent data types (e.g., dates as `datetime`, prices as `float`).
   - **Validation**: Check for any remaining inconsistencies and verify the cleaned data.
 
-### 5. Feature Engineering
-   - **Create New Columns**: Calculate the `Total Amount` for each transaction by multiplying `unit_price` by `quantity` and adding this as a new column.
-   - **Enhance Dataset**: Adding this calculated field will streamline further SQL analysis and aggregation tasks.
-
-### 6. Load Data into `.csv` format and into MYSQL
+### 5. Load Data into `.csv` format and into MYSQL
   - **To CSV File**- Save the cleaned file into `.csv` format for any further use.
   - **Set Up Connections**: Connect to MySQL using `sqlalchemy` and load the cleaned data into each database.
   - **Table Creation**: Set up tables in both MySQL using Python SQLAlchemy to automate table creation and data insertion.
 
-### 7. SQL Analysis: Complex Queries and Business Problem Solving
+### 6. SQL Analysis: Complex Queries and Business Problem Solving
   - **Business Problem-Solving**: Write and execute complex SQL queries to answer critical business questions, such as:
-    - Find different payment methods, number of transactions, and quantity sold by payment method.
-    - Identify the highest-rated category in each branch. Display the branch, category, and avg rating.
-    - Identify the busiest day for each branch based on the number of transactions.
-    - Calculate the total quantity of items sold per payment method.
-    - Determine the average, minimum, and maximum rating of categories for each city.
-    - Calculate the total profit for each category.
-    - Determine the most common payment method for each branch.
-    - Categorize sales into Morning, Afternoon, and Evening shifts.
-    - Identify the 5 branches with the highest revenue decrease ratio from last year to current year (e.g., 2022 to 2023).
+    - What was the best month for sales? How much was earned that month?
+    - What city has the highest sales?
+    - What time should we display advertisements to maximize likehood of customers buying products?
+    - What product sold the most? Why do you think it sold the most?
     
 
 
@@ -62,5 +53,5 @@ Possible extensions to this project:
 ## Acknowledgments
 
 - **Data Source**: Kaggle’s Walmart Sales Dataset
-- **Inspiration**: Walmart’s business case studies on sales and supply chain optimization.
+- **Inspiration**: Sales business case studies on sales and supply chain optimization.
 ---
